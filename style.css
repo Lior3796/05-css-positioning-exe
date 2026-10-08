@@ -3,6 +3,57 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: black 1px solid;
+  list-style: none;
   font-size: 10px;
+  font-family: "almoni-dl", sans-serif;
+  /* border: black 1px solid; */
+}
+/* Whole container to the page */
+.container-news {
+  height: 100vh;
+  width: 100vw;
+  /* border: 5px solid black; */
+}
+
+.navbar {
+  width: 100%; /* Used 100% to use all the width of the page */
+  height: 6%; /* Used 6% just a small portion from the page, inhert from the container */
+}
+
+.nav-links-list {
+  width: 100%;
+  height: 100%; /* basically its just 6% of the container */
+  background: rgb(56, 105, 56);
+}
+.logo {
+  position: absolute; /* just for moving a little bit the logo from the upper edge */
+  top: 1.2rem;
+  width: 2rem;
+}
+.nav-link-item {
+  display: inline; /* making the list one item after the another */
+  position: relative;
+  padding: 1.8rem; /* for centring the content a little bit */
+}
+
+.nav-link-text {
+  font-size: 1.8rem;
+  border-bottom: 3px solid;
+  color: white;
+}
+
+/* TODO: implement a divider for each list item */
+.divider {
+  margin-left: 5px;
+}
+
+/* TODO: seperated each border color to a diff class */
+.blue-border {
+  border-color: blue;
+}
+.red-border {
+  border-color: red;
+}
+.green-border {
+  border-color: rgb(3, 34, 3);
 }
